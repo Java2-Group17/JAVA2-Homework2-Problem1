@@ -59,7 +59,7 @@ public class Date
 
   public String toString()
   {
-      return("Month: " + month + " Day: " + day + " Year: " + year);
+      return(month + "/" + day + "/" + year);
   }
 
 } // end class

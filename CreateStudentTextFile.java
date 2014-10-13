@@ -11,13 +11,21 @@ import java.lang.SecurityException;
 import java.util.Formatter;
 import java.util.FormatterClosedException;
 import java.util.NoSuchElementException;
-import java.util.*;
-import java.text.*;
+import java.util.Scanner;
 
 public class CreateStudentTextFile
 {
   private Formatter output;
 
+
+  public static void main(String[] args)
+  {
+    CreateStudentTextFile application = new CreateStudentTextFile();
+
+    application.openFile();
+    application.addRecords();
+    application.closeFile();
+  }
 
 
   public void openFile()
@@ -63,7 +71,11 @@ public class CreateStudentTextFile
           record.setFirstName(input.next());
           record.setLastName(input.next());
           record.setGPA(input.nextDouble());
-          record.setDateOfAdmission(input.next());
+          int m = input.nextInt();
+          int d = input.nextInt();
+          int y = input.nextInt();
+          Date d1 = new Date(m, d, y);
+          record.setDateOfAdmission(d1);
 
           if (record.getID() > 0)
           {
