@@ -63,7 +63,7 @@ public class CreateStudentTextFile
           record.setFirstName(input.next());
           record.setLastName(input.next());
           record.setGPA(input.nextDouble());
-          record.setDateOfAdmission(input.nextInt());
+          record.setDateOfAdmission(input.next());
 
           if (record.getID() > 0)
           {
