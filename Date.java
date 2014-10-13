@@ -12,6 +12,12 @@ public class Date
   private int day;
   private int year;
 
+  public Date()
+  {
+    setMonth(0);
+    setDay(0);
+    setYear(0);
+  }
   public Date(int m, int d, int y)
   {
     setMonth(m);
