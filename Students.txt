@@ -1,0 +1,5 @@
+1001 Alex Jones 3.56 6/12/2012
+1002 Bob Louis 3.89 8/24/2013
+1003 Chris Anderson 3.33 7/14/2011
+1004 David Ruth 3.85 1/15/2012
+1005 George Brown 3.52 1/25/2013
